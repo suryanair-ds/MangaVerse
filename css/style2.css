@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    color: white;
+    font-size: 30px;
+}
+
+.namem {
+    font-weight: bold;
+}
+
+.plus {
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #0fcea4;
+}
+
+.firstsection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.photo img {
+    height: 450px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h1 {
+    font-size: 3rem;
+    color: #0fcea4;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0fcea4;
+    color: white;
+    border-color: #0fcea4;
+}
+
+.like, .dislike {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+}
+
+.like:hover, .dislike:hover {
+    color: #0fcea4;
+}
+
+.selected {
+    color: #0fcea4;
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
