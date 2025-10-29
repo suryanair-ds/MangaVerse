@@ -2,6 +2,7 @@
 
 **MangaVerse** is an online manga reading platform built using **PHP, MySQL, HTML, CSS, and JavaScript**.  
 It offers a smooth, interactive experience for manga lovers with features like email verification, favorites, and a user dashboard. You can update your fav Manga's according to your favourites. Do make according changes once updated.
+Index.php is the Main page.
 
 ## 🌟 Features
 - User registration & login (PHPMailer)
